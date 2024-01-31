@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản lý sinh viên - SQLite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_CreateDB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tạo CSDL" />
+        <Button
+            android:id="@+id/btn_DelDB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xóa CSDL" />
+        <Button
+            android:id="@+id/btn_CreateTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tạo bảng" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_DelTable"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="2"
+                android:text="Xóa bảng" />
+            <EditText
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:hint="Tên bảng" />
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/textInputLayout"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:hint="Tên bảng" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_masv"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:hint="Nhập mã sinh viên" />
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Tìm kiếm" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_tensv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Nhập tên sinh viên" />
+        <Button
+            android:id="@+id/btn_them"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm" />
+        <Button
+            android:id="@+id/btn_xoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xóa" />
+        <Button
+            android:id="@+id/btn_sua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sửa" />
+        <ListView
+            android:id="@+id/lv_sinhvien"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
